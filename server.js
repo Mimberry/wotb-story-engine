@@ -181,7 +181,7 @@ async function sendEmail(to, womanDisplay, story) {
       Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "Women of the Bible <onboarding@resend.dev>",
+      from: "Rivers of Eden <hello@stories.riversofeden.co.uk>",
       to: [to],
       subject: `Your ${womanDisplay} story is here`,
       text: `${story}\n\n—\n\nThis story was written for you alone.`,
